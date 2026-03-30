@@ -1,7 +1,35 @@
-![Figure 1: L2 Norm comparison between Thinking and Non-Thinking responses across layers. The thinking-intensive benchmark shows significantly higher L2 Norm values, particularly in later layers (25-35), indicating greater activation magnitude during reasoning processes.](Figure1_Comparison.png)
+<p align="center">
+  <img src="Figure1_Comparison.png" alt="L2 Norm Comparison" width="800">
+  <br>
+  <b>Figure 1: L2 Norm comparison across layers for Thinking vs. Non-Thinking responses.</b>.
+</p>
 
-![Figure 2: Mean Top-K Feature Score comparison across different SAE configurations on Qwen3-4B. Baseline SAE (hidden_mult=4, epochs=6, lr=1e-3, lambda_l1=1e-3) is compared with variants: reduced hidden_mult=2, fewer epochs=3, increased sparsity lambda_l1=5e-3, relative difference ranking (think-nonthink)/(nothink+ε), and Top-40 feature dilution. Significant reasoning layers are highlighted in green (layers 27-35).](Figure2_SAEs.png)
+<p align="center">
+  <img src="Figure2_SAEs.png" alt="SAE Variants Comparison" width="800">
+  <br>
+  <b>Figure 2: Mean Top-K Feature Score across layers for different SAE configurations on Qwen3-4B.</b> We compare the Baseline SAE (hidden_mult=4, epochs=6, lr=1e-3, lambda_l1=1e-3) against variants: reduced capacity (hidden_mult=2), fewer epochs (3), higher sparsity penalty (lambda_l1=5e-3), relative difference ranking ((think-nonthink)/(nothink+ε)), and Top-40 feature dilution. Significant reasoning layers are highlighted in the green shaded region.
+</p>
 
-![Figure 3: Layer 34 analysis showing normalized Mutual Information (MI), LayerNorm Magnitude, and Information Gain (IG) across the final 128 token positions. MI peaks require expensive computation (matrix inversion). The normalized MI curve (blue), LayerNorm magnitude (orange dashed), and IG bars (green for IG>0, red for IG<0) reveal information dynamics critical for answer generation.](MI1.png)
+<p align="center">
+  <img src="MI1.png" alt="MI and IG Analysis" width="800">
+  <br>
+  <b>Figure 3: Layer 34 analysis of Mutual Information (MI) and Information Gain (IG) over the final 128 tokens(Case 1).
+</p>
 
-![Figure 4: Bad case study on hallucination and over-cautiousness. Left: Model's actual response contains hallucinations (incorrectly claiming Jennifer Aniston and Linda Emond voiced Nala). Right: Correct reasoning process identifying the actual voice actors (Niketa Calame, Moira Kelly, Sally Dworsky, Laura Williams). The model exhibits false confidence by fabricating and reinforcing incorrect information.](Case Study1.png)
+<p align="center">
+  <img src="MI2.png" alt="MI and IG Analysis" width="800">
+  <br>
+  <b>Figure 4: Layer 34 analysis of Mutual Information (MI) and Information Gain (IG) over the final 128 tokens(Case 2).
+</p>
+
+<p align="center">
+  <img src="Case Study1.png" alt="Bad Case Study" width="800">
+  <br>
+  <b>Figure 5: Bad case study illustrating hallucination and false confidence.</b>.
+</p>
+
+<p align="center">
+  <img src="Case Study2.png" alt="Bad Case Study" width="800">
+  <br>
+  <b>Figure 6: Bad case study illustrating overcaution.</b>.
+</p>
