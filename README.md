@@ -1,2 +1,7 @@
-# ICML2026-Rebuttal
-The Tell-Tale Norm
+![Figure 1: L2 Norm comparison between Thinking and Non-Thinking responses across layers. The thinking-intensive benchmark shows significantly higher L2 Norm values, particularly in later layers (25-35), indicating greater activation magnitude during reasoning processes.](Figure1_Comparison.png)
+
+![Figure 2: Mean Top-K Feature Score comparison across different SAE configurations on Qwen3-4B. Baseline SAE (hidden_mult=4, epochs=6, lr=1e-3, lambda_l1=1e-3) is compared with variants: reduced hidden_mult=2, fewer epochs=3, increased sparsity lambda_l1=5e-3, relative difference ranking (think-nonthink)/(nothink+ε), and Top-40 feature dilution. Significant reasoning layers are highlighted in green (layers 27-35).](Figure2_SAEs.png)
+
+![Figure 3: Layer 34 analysis showing normalized Mutual Information (MI), LayerNorm Magnitude, and Information Gain (IG) across the final 128 token positions. MI peaks require expensive computation (matrix inversion). The normalized MI curve (blue), LayerNorm magnitude (orange dashed), and IG bars (green for IG>0, red for IG<0) reveal information dynamics critical for answer generation.](MI1.png)
+
+![Figure 4: Bad case study on hallucination and over-cautiousness. Left: Model's actual response contains hallucinations (incorrectly claiming Jennifer Aniston and Linda Emond voiced Nala). Right: Correct reasoning process identifying the actual voice actors (Niketa Calame, Moira Kelly, Sally Dworsky, Laura Williams). The model exhibits false confidence by fabricating and reinforcing incorrect information.](Case Study1.png)
