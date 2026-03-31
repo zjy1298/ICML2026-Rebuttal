@@ -198,16 +198,17 @@
 <div align="center">
   <b>Table 9: Results on general benchmarks including commonsense reasoning, hallucination detection, knowledge probing, instruction following, and faithfulness-based extraction tasks.</b>
 
-| Model | hellaswag | ifeval | nq_open | pubmed_qa | truthfulqa |
-|-------|-----------|--------|---------|-----------|------------|
-| **R1-Distilled-LLaMA-8B** | 68.25 | 46.28 | **23.24** | **68.20** | 44.19 |
-| ALRR | 67.89 | 47.60 | 21.72 | 65.00 | 44.79 |
-| ERSS | 68.20 | **48.80** | 22.30 | 66.40 | 43.94 |
-| LRS | **68.61** | 47.48 | 22.05 | 67.40 | **44.80** |
-| **Qwen3-4B** | **80.61** | 49.04 | **28.80** | **68.20** | **46.14** |
-| ALRR | 80.58 | **49.76** | 25.18 | 66.80 | 43.76 |
-| ERSS | 80.60 | 49.28 | 25.24 | 67.00 | 44.67 |
-| LRS | 80.59 | 48.92 | 26.78 | 67.80 | 44.30 |
+| Model | Method | hellaswag | ifeval | nq_open | pubmed_qa | truthfulqa |
+|-------|--------|-----------|--------|---------|-----------|------------|
+| **Qwen3-4B** | Baseline | **80.61** | 49.04 | **28.80** | **68.20** | **46.14** |
+| | ALRR | 80.58 | **49.76** | 25.18 | 66.80 | 43.76 |
+| | ERSS | 80.60 | 49.28 | 25.24 | 67.00 | 44.67 |
+| | LRS | 80.59 | 48.92 | 26.78 | 67.80 | 44.30 |
+| **R1-Distilled-LLaMA-8B** | Baseline | 68.25 | 46.28 | **23.24** | **68.20** | 44.19 |
+| | ALRR | 67.89 | 47.60 | 21.72 | 65.00 | 44.79 |
+| | ERSS | 68.20 | **48.80** | 22.30 | 66.40 | 43.94 |
+| | LRS | **68.61** | 47.48 | 22.05 | 67.40 | **44.80** |
+
 </div>
 <br>
 <br>
