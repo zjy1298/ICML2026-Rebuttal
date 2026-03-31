@@ -67,7 +67,7 @@
 <div align="center">
   <img src="Figure2_SAEs.png" alt="SAE Variants Comparison" width="800">
   <br>
-  <b>Figure 2: Mean Top-K Feature Score across layers for different SAE configurations on Qwen3-4B.</b> We compare the Baseline SAE (hidden_mult=4, epochs=6, lr=1e-3, lambda_l1=1e-3) against variants: reduced capacity (hidden_mult=2), fewer epochs (3), higher sparsity penalty (lambda_l1=5e-3), relative difference ranking ((think-nonthink)/(nothink+ε)), and Top-40 feature dilution. Significant reasoning layers are highlighted in the green shaded region.
+  <b>Figure 2: Mean Top-K Feature Score across layers for different SAE configurations on Qwen3-4B.</b>
 </div>
 
 <br>
